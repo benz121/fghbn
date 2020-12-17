@@ -147,14 +147,14 @@ font-size:1.2em;
 {
 opacity:1;
 }
-
-
 </style>
+
+<!-- First -->
 
 <div class="posts">
     {% for post in site.posts %}
       <article class="post">
-<div class="card-columns center">
+<div class="center">
     <div class="property-card">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <div class="property-image">
@@ -186,3 +186,122 @@ opacity:1;
 </article>
 {% endfor %}
 </div>
+
+
+
+<!--         second        -->
+
+<div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+<div class="center card-deck">
+    <div class="property-card">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="property-image">
+          <div class="property-image-title">
+            <h5>{{ post.title }}</h5>
+          </div>
+        </div></a>
+      <div class="property-description">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="card-text"> 
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </p>
+         
+         </div>
+
+        <div class="card-footer">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <div class="property-social-icons">
+                      <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                </div>
+            </a>       
+            
+        </div>
+    </div>
+   
+    </div>
+</article>
+{% endfor %}
+</div>
+
+
+<!--         Third        -->
+
+<div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+<div class="card-deck">
+    <div class="property-card">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="property-image">
+          <div class="property-image-title">
+            <h5>{{ post.title }}</h5>
+          </div>
+        </div></a>
+      <div class="property-description">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="card-text"> 
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </p>
+         
+         </div>
+
+        <div class="card-footer">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <div class="property-social-icons">
+                      <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                </div>
+            </a>       
+            
+        </div>
+    </div>
+   
+    </div>
+</article>
+{% endfor %}
+</div>
+
+
+<!--         Fourth        -->
+
+<div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+<div class="card-columns">
+    <div class="property-card">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <div class="property-image">
+          <div class="property-image-title">
+            <h5>{{ post.title }}</h5>
+          </div>
+        </div></a>
+      <div class="property-description">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="card-text"> 
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </p>
+         
+         </div>
+
+        <div class="card-footer">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <div class="property-social-icons">
+                      <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                </div>
+            </a>       
+            
+        </div>
+    </div>
+   
+    </div>
+</article>
+{% endfor %}
+</div>
+

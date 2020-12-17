@@ -150,41 +150,6 @@ opacity:1;
 
 
 </style>
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-    <div class="card">
-
-              <!--Card image-->
-              <div class="view overlay">
-                <div class="embed-responsive embed-responsive-16by9 rounded-top">
-                  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <!--Card content-->
-              <div class="card-body">
-                <!--Title-->
-                     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-                <!--Text-->
-                <p class="card-text"> 
-                  <div class="entry">
-                    {{ post.excerpt }}
-                  </div>
-                </p>
-                <p class="card-text">
-                  <strong>      
-                    <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-                  </strong>
-                </p>
-              </div>
-
-            </div>
-    
-    </article>
-  {% endfor %}
-</div>
 
 <div class="posts">
     {% for post in site.posts %}

@@ -37,3 +37,40 @@ layout: default
     </article>
   {% endfor %}
 </div>
+
+
+<div class="posts">
+    {% for post in site.posts %}
+      <article class="post">
+<div class="card-columns center">
+    <div class="property-card">
+      <a href="#">
+        <div class="property-image">
+          <div class="property-image-title">
+            <!-- Optional <h5>Card Title</h5> If you want it, turn on the CSS also. -->
+          </div>
+        </div></a>
+      <div class="property-description">
+        <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+        <p class="card-text"> 
+            <div class="entry">
+              {{ post.excerpt }}
+            </div>
+          </p>
+         
+         </div>
+
+        <div class="card-footer">
+            <a href="{{ site.baseurl }}{{ post.url }}">
+                <div class="property-social-icons">
+                      <!-- I would usually put multipe divs inside here set to flex. Some people might use Ul li. Multiple Solutions -->
+                </div>
+            </a>       
+            
+        </div>
+    </div>
+   
+    </div>
+</article>
+{% endfor %}
+</div>
